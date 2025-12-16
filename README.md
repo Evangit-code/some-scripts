@@ -1,12 +1,34 @@
 # some-scripts
+
+Colección de scripts personales para **BSPWM** y entornos minimalistas en Linux.
+
+---
+
 ## Battery_state
-Permite leer el estado de la bateria y cuando se cumplen ciertas condiciones manda un mensaje atraves de dusntify
+
+Script que lee el estado de la batería y, cuando se cumplen ciertas condiciones (porcentaje bajo, cargando, etc.), envía notificaciones usando **dunstify**.
+
+---
 
 ## checking_loop
-Ejecuta scripts que se repiten cada cierto tiempo como es el caso de ´battery_state.sh´
+
+Ejecuta scripts de forma periódica en un bucle.
+Pensado para tareas como ejecutar `battery_state.sh` cada cierto intervalo de tiempo.
+
+---
 
 ## dmenu_shutdown
-Ejecuta una ventana atravez de ´dmenu_run´ para poder apagar o reinicar con una interfaz intuitiva
+
+Muestra un menú mediante **dmenu** que permite:
+
+* Apagar el sistema
+* Reiniciar
+
+Todo desde una interfaz simple e intuitiva.
+
+---
 
 ## start-scripts
-Es un archivo el cual permite la ejecucion de archivos de scripts en uno solo para el ´bspwmrc´
+
+Archivo encargado de ejecutar varios scripts desde un solo punto.
+Está pensado para ser llamado directamente desde el `bspwmrc`, facilitando la inicialización de scripts al iniciar la sesión.
