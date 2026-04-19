@@ -61,8 +61,3 @@ Escucha notificaciones del sistema y ejecuta acciones como reproducir sonidos.
 Script de inicialización que ejecuta otros scripts al iniciar sesión.
 
 ---
-
-### start-terraria.sh
-Inicia Terraria desde una instalación local.
-
----
