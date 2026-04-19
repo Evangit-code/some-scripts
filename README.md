@@ -1,34 +1,71 @@
 # some-scripts
 
-Colección de scripts personales para **BSPWM** y entornos minimalistas en Linux.
+Colección de scripts personales para entornos minimalistas en Linux.
 
 ---
 
-## Battery_state
+## Descripción
 
-Script que lee el estado de la batería y, cuando se cumplen ciertas condiciones (porcentaje bajo, cargando, etc.), envía notificaciones usando **dunstify**.
+Este repositorio contiene scripts para automatizar tareas del sistema en un entorno Linux ligero.
 
----
+Funciones principales:
 
-## checking_loop
-
-Ejecuta scripts de forma periódica en un bucle.
-Pensado para tareas como ejecutar `battery_state.sh` cada cierto intervalo de tiempo.
-
----
-
-## dmenu_shutdown
-
-Muestra un menú mediante **dmenu** que permite:
-
-* Apagar el sistema
-* Reiniciar
-
-Todo desde una interfaz simple e intuitiva.
+- Gestión de batería y notificaciones
+- Conexión a redes WiFi
+- Menús del sistema con dmenu
+- Scripts de inicio de sesión
+- Manejo de notificaciones
+- Lanzamiento de juegos
 
 ---
 
-## start-scripts
+## Scripts
 
-Archivo encargado de ejecutar varios scripts desde un solo punto.
-Está pensado para ser llamado directamente desde el `bspwmrc`, facilitando la inicialización de scripts al iniciar la sesión.
+### battery_state.sh
+Monitorea el estado de la batería y muestra notificaciones cuando la batería está baja o cargada.
+
+---
+
+### checking_loop.sh
+Ejecuta scripts en un bucle con intervalos de tiempo.
+
+---
+
+### connect_wifi.sh
+Script para conectarse a redes WiFi usando wpa_supplicant.
+
+Funciones:
+- Solicita SSID y contraseña
+- Verifica si la red ya existe
+- Agrega la red al archivo de configuración
+- Reinicia servicios de red
+
+---
+
+### dmenu_shutdown.sh
+Menú con dmenu para apagar o reiniciar el sistema.
+
+---
+
+### dmenu-askpass.sh
+Solicita contraseña usando dmenu.
+
+---
+
+### on_notify.sh
+Escucha notificaciones del sistema y ejecuta acciones como reproducir sonidos.
+
+---
+
+### start-scripts.sh
+Script de inicialización que ejecuta otros scripts al iniciar sesión.
+
+---
+
+### start-terraria.sh
+Inicia Terraria desde una instalación local.
+
+---
+
+## Estructura
+
