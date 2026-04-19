@@ -66,6 +66,3 @@ Script de inicialización que ejecuta otros scripts al iniciar sesión.
 Inicia Terraria desde una instalación local.
 
 ---
-
-## Estructura
-
